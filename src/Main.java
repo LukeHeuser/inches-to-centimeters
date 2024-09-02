@@ -9,14 +9,11 @@ public class Main {
     }
 
     public static double convertToCentimeters(int inches){
-        double centemeters = (inches * 2.54);
-        return centemeters;
+        return (inches * 2.54);
     }
 
     public static double convertToCentimeters(int feet, int inches){
-        int feetToInches = feet * 12;
-        int totalInches = feetToInches + inches;
-        return convertToCentimeters(totalInches);
+        return convertToCentimeters(((feet * 12) + inches));
     }
 
 }
